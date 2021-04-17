@@ -22,12 +22,17 @@ describe('AppController (e2e)', () => {
 
   it('/ (GET)', () => {
     return request(app.getHttpServer())
-      .get('/books')
+      .get('/')
       .expect(200)
       .expect(r => {
         const books: IBook[] = r.body
-        // TODO fix this test
         expect(books.every(book => book.id)).toBeDefined()
       })
+  })
+
+  it('/ (POST)', () => {
+    return request(app.getHttpServer())
+      .post('/')
+      .expect(404)
   })
 })
