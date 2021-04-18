@@ -3,6 +3,7 @@ import { BooksList } from '../features/books/BooksList'
 import { useDispatch, useSelector } from 'react-redux'
 import { IRootStore } from '../../types'
 import { getBooksThunk } from '../../store/features/books'
+import { Title } from '../style'
 
 export const Home: React.FC = () => {
   const dispatch = useDispatch()
@@ -12,7 +13,7 @@ export const Home: React.FC = () => {
 
   return (
     <>
-      <h1>Books You Might Like</h1>
+      <Title>Books You Might Like</Title>
       {data && <BooksList data={data} />}
     </>
   )
