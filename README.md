@@ -45,10 +45,11 @@ The following commands help you to run the project
     - `yarn test`
     
 ### Responsive Layouts
-<img width="2032" alt="Screenshot 2021-04-18 at 12 29 13" src="https://user-images.githubusercontent.com/49147449/115143991-1d03b500-a042-11eb-8b97-38f8daaa059c.png">
-<img width="2032" alt="Screenshot 2021-04-18 at 12 29 16" src="https://user-images.githubusercontent.com/49147449/115143993-1ffea580-a042-11eb-9cfd-eab962438719.png">
-<img width="2032" alt="Screenshot 2021-04-18 at 12 29 19" src="https://user-images.githubusercontent.com/49147449/115143997-22f99600-a042-11eb-94d6-c6b055f463c4.png">
-<img width="2032" alt="Screenshot 2021-04-18 at 12 29 22" src="https://user-images.githubusercontent.com/49147449/115143999-242ac300-a042-11eb-846e-c0956a1605c5.png">
-<img width="2032" alt="Screenshot 2021-04-18 at 12 29 25" src="https://user-images.githubusercontent.com/49147449/115144000-255bf000-a042-11eb-9e92-9b36b3b4a1a4.png">
-<img width="2032" alt="Screenshot 2021-04-18 at 12 29 29" src="https://user-images.githubusercontent.com/49147449/115144001-268d1d00-a042-11eb-9113-5ac319fbceee.png">
+<img width="2032" alt="Screenshot 2021-04-18 at 17 06 55" src="https://user-images.githubusercontent.com/49147449/115152347-a0d09800-a068-11eb-8bc1-d42231bf92b3.png">
+<img width="2032" alt="Screenshot 2021-04-18 at 17 06 59" src="https://user-images.githubusercontent.com/49147449/115152361-ae861d80-a068-11eb-9029-63f07a7b3a14.png">
+<img width="2032" alt="Screenshot 2021-04-18 at 17 07 04" src="https://user-images.githubusercontent.com/49147449/115152370-b776ef00-a068-11eb-9386-32fbc2dcadd7.png">
+<img width="2032" alt="Screenshot 2021-04-18 at 17 09 00" src="https://user-images.githubusercontent.com/49147449/115152408-d1b0cd00-a068-11eb-837b-f1ee72997971.png">
+<img width="2032" alt="Screenshot 2021-04-18 at 17 09 03" src="https://user-images.githubusercontent.com/49147449/115152412-d4abbd80-a068-11eb-9bf0-c69a897a9ae2.png">
+<img width="2032" alt="Screenshot 2021-04-18 at 17 09 07" src="https://user-images.githubusercontent.com/49147449/115152414-d6758100-a068-11eb-96ba-ecd691028409.png">
+
 
