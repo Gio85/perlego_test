@@ -121,7 +121,7 @@ export const BookTitle = styled.p`
   }
 `
 
-export const BookPublisher = styled.p`
+export const BookContributor = styled.p`
   font-size: 1rem;
   color: black;
   

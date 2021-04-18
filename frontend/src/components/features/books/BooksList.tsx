@@ -1,6 +1,6 @@
 import React from 'react'
 import { IBook } from '../../../types'
-import { Books, Book, Cover, BookTitle, BookPublisher } from '../../style'
+import { Books, Book, Cover, BookTitle, BookContributor } from '../../style'
 
 const BASE_URL = 'https://www.perlego.com'
 
@@ -17,7 +17,7 @@ export const BooksList: React.FC<IProps> = (props): React.ReactElement => {
           <Book key={i}>
             <Cover src={`${BASE_URL}/${book.Location}${book.Cover_File}`} alt="book image" />
             <BookTitle>{book.Title_DistinctivetitlebookCovertitle_TitleText}</BookTitle>
-            <BookPublisher>{book.Publisher_PublisherName}</BookPublisher>
+            <BookContributor>{book.Contributor1_PersonName}</BookContributor>
           </Book>
         ))}
     </Books>
