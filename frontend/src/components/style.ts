@@ -92,11 +92,11 @@ export const Book = styled.div`
 
 export const Cover = styled.img`
   @media ${device.mobileS} {
-    max-width: 50%;
+    max-width: 80%;
   }
 
   @media ${device.mobileM} {
-    max-width: 70%;
+    max-width: 80%;
   }
 
   @media ${device.tablet} {
