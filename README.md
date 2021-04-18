@@ -1,3 +1,4 @@
+
 # Perlego Test
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -36,6 +37,9 @@ The following commands help you to run the project
     - `cd backend`
     - `yarn test:cov` for unit tests with coverage
     - `yarn test:e2e` for e2e tests
+
+<img width="841" alt="Screenshot 2021-04-18 at 12 56 21" src="https://user-images.githubusercontent.com/49147449/115144685-e760cb00-a045-11eb-9eaa-038fc6452be2.png">
+ <img width="841" alt="Screenshot 2021-04-18 at 12 57 19" src="https://user-images.githubusercontent.com/49147449/115144700-f778aa80-a045-11eb-894d-83751a8704f6.png">
     
 - Frontend:
     - `cd frontend`
