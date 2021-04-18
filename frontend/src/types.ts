@@ -1,6 +1,14 @@
-export interface IHttpClient {
-  get<T>(path: string, parameters?: unknown): Promise<T>
+import { Action, ThunkAction } from '@reduxjs/toolkit'
+
+export interface IApiResponse<T> {
+  data: T
+  status: number
 }
+
+export interface IHttpClient {
+  get<T>(path: string, parameters?: unknown): Promise<IApiResponse<T> | Error>
+}
+
 
 export interface IApiError {
   message: string
@@ -9,7 +17,7 @@ export interface IApiError {
 }
 
 export enum ENDPOINT {
-  BOOKS = 'books'
+  BOOKS = '/'
 }
 
 export interface IBook {
@@ -32,3 +40,17 @@ export interface IBook {
 export enum ROUTE {
   HOME = '/'
 }
+
+export interface IStoreError {
+  error: string | null
+}
+
+export interface IBookStore extends IStoreError {
+  data: IBook[] | null
+}
+
+export interface IRootStore {
+  books: IBookStore
+}
+
+export type IThunk = ThunkAction<void, IRootStore, unknown, Action<string>>

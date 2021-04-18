@@ -1,15 +1,15 @@
-import { IHttpClient } from '../../../../types'
+import { IApiResponse, IHttpClient } from '../../../../types'
 import Axios, { AxiosError, AxiosRequestConfig } from 'axios'
 import { ApiError } from '../errors'
 
 export class HttpClient implements IHttpClient {
   protected api: string = process.env.REACT_APP_BOOKS_SERVICE_URL || 'http://localhost:3000'
 
-  public get<T>(endpoint: string): Promise<T> {
-    return Axios.get(`${this.api}/${endpoint}`, {
+  public get<T>(endpoint: string): Promise<IApiResponse<T> | Error> {
+    return Axios.get(`${this.api}${endpoint}`, {
       ...this.getRequestConfig()
     })
-      .then(({ data, ...request }) => ({ ...data, status: request.status }))
+      .then(({ data, status }) => ({ data, status }))
       .catch(error => {
         return this.errorParser(error, endpoint)
       })

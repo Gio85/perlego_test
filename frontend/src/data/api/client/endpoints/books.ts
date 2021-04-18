@@ -1,4 +1,4 @@
-import { ENDPOINT, IBook, IHttpClient } from '../../../../types'
+import { ENDPOINT, IApiResponse, IBook, IHttpClient } from '../../../../types'
 
 export class BooksEndpoint {
   public path = `${ENDPOINT.BOOKS}`
@@ -7,7 +7,7 @@ export class BooksEndpoint {
   /**
    * This method will return the list of books
    */
-  public getBooks(): Promise<IBook[]> {
+  public getBooks(): Promise<IApiResponse<IBook[]> | Error> {
     return this.client.get<IBook[]>(`${this.path}`)
   }
 }
